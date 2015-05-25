@@ -1,0 +1,7 @@
+- hosts: scds
+  sudo: true
+  tasks:
+   - name: updates machines 
+     apt: update_cache=yes
+   - name: upgrades machines
+     apt: upgrade=yes
